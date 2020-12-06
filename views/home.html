@@ -3,17 +3,35 @@
 
 <template id="page1.html">
   <ons-page id="page1" class="con">
-   <div class="bass">Animation</div>
+    <div class="toolbar">
+      <div class="toolbar__center">
+        <div class="segment" style="width:200px;margin:7px 50px;">
+          <div class="segment__item">
+            <input type="radio" class="segment__input" name="navi-segment-a" checked="">
+            <div class="segment__button">One</div>
+          </div>
+    
+          <div class="segment__item">
+            <input type="radio" class="segment__input" name="navi-segment-a">
+            <div class="segment__button">Two</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     
     <ons-carousel var="carousel" ons-postchange="console.log('Changed to ' + $event.activeIndex)" swipeable auto-scroll overscrollable>
         <ons-carousel-item>
           <div id="m1"></div>
+          <!-- <img src="https://firebasestorage.googleapis.com/v0/b/mobilettt-54a51.appspot.com/o/valorant%2F1.jpg?alt=media&token=84e71247-de2b-471c-9751-0b93182c6fb4" width="375" height="200" id="m1"> -->
         </ons-carousel-item>
         <ons-carousel-item>
           <div id="m2"></div>
+          <!-- <img src="https://firebasestorage.googleapis.com/v0/b/mobilettt-54a51.appspot.com/o/valorant%2F2.jpg?alt=media&token=1e6cfc2e-e084-4ab8-bf46-58681ff03ded" width="375" height="200"> -->
                 </ons-carousel-item>
         <ons-carousel-item>
           <div id="m3"></div>        
+          <!-- <img src="https://firebasestorage.googleapis.com/v0/b/mobilettt-54a51.appspot.com/o/valorant%2F3.jpg?alt=media&token=21310f1c-8c48-4b31-a5be-9d23f18dcb12" width="375" height="200"> -->
         </ons-carousel-item>
       </ons-carousel>
       
