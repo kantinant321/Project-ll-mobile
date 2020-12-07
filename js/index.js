@@ -33,9 +33,22 @@ $(function () {
          
       querySnapshot.forEach((doc) => {
               var num = `${doc.data().listN}`
-              var card = ` <img src="${doc.data().posterURL}" width="375" height="550" id="m1">
+              var card = ` <img src="${doc.data().posterURL}" width="375" height="200" id="m1">
               `;
               $("#m" + num).append(card);
+          });
+      })
+})
+
+$(function () {
+  var db = firebase.firestore();
+  db.collection("valo").get().then((querySnapshot) => {
+         
+      querySnapshot.forEach((doc) => {
+              var num = `${doc.data().No}`
+              var card = ` <img src="${doc.data().URL}" width="70" height="70" id="a1">
+              `;
+              $("#a" + num).append(card);
           });
       })
 })
