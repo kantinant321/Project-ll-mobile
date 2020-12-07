@@ -1,13 +1,14 @@
 var firebaseConfig = {
-  apiKey: "AIzaSyDtr30xjX72IC9uVt9ezey8O8TTxGIhkm8",
-  authDomain: "mobilettt-54a51.firebaseapp.com",
-  projectId: "mobilettt-54a51",
-  storageBucket: "mobilettt-54a51.appspot.com",
-  messagingSenderId: "729697129571",
-  appId: "1:729697129571:web:bdeaf50fe2dde0b6259456",
-  measurementId: "G-YMB18RMDWN"
+  apiKey: "AIzaSyD-U38IgqepA_sczk63XlkcNVH8Wp2SzM4",
+  authDomain: "movietest-affbf.firebaseapp.com",
+  databaseURL: "https://movietest-affbf.firebaseio.com",
+  projectId: "movietest-affbf",
+  storageBucket: "movietest-affbf.appspot.com",
+  messagingSenderId: "994130682311",
+  appId: "1:994130682311:web:6195382241044a003479e2",
+  measurementId: "G-YXH7F9XZE8"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+firebase.analytics(); 
 const auth = firebase.auth();
