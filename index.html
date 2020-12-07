@@ -12,13 +12,13 @@
     <script src="lib/onsenui/onsenui.min.js"></script>
     <script src="js/app.js"></script>
     <script src="css/app.css"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
     <script src="js/firebase.js"></script>
-    <!-- <script src="js/signin.js"></script> -->
     <script src="js/index.js"></script>
+    <script src="js/signin.js"></script>
     <script src="js/detail.js"></script>
     <script src="js/search.js"></script>
 
@@ -26,32 +26,20 @@
 </head>
 <body>
     <ons-page>
-            <ons-toolbar>
-              <div class="left">
-                <span class="toolbar-button">
-                    <i class="ion-ios-menu" style="font-size:32px; vertical-align:-6px;"></i>
-                  </span>
-              </div>
-          
-              <div class="center" style="font-size:32px">TTT</div>
-          
-              <div class="right">
-                <span class="toolbar-button">
-                    <i class="ion-ios-search" style="font-size:32px; vertical-align:-6px;"></i>
-                  </span>
-              </div>
-            </ons-toolbar>
-
+        <ons-toolbar>
+            <div class="center">MOOTUBE
+            </div>
+        </ons-toolbar>
         <ons-tabbar swipeable position="auto">
             <ons-tab page="views/home.html" label="HOME" icon="md-home, material:md-home" badge="" active>
             </ons-tab>
             <ons-tab page="views/strategy.html" label="Strategy" icon="md-book" active-icon="md-book">
             </ons-tab>
-            <ons-tab page="views/tournament.html" label="Tournament" icon="md-star" active-icon="md-star">
-            </ons-tab>
-            <ons-tab page="views/profile.html" label="Me" icon="md-face" active-icon="md-face">
-            </ons-tab>
             <ons-tab page="views/search.html" label="SEARCH" icon="md-search" active-icon="md-search">
+            </ons-tab>
+            <ons-tab page="views/favorite.html" label="FAVORITE" icon="md-favorite" active-icon="md-favorite">
+            </ons-tab>
+            <ons-tab page="views/profile.html" label="PROFILE" icon="md-face" active-icon="md-face">
             </ons-tab>
         </ons-tabbar>
 

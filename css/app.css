@@ -1,14 +1,14 @@
-/* .toolbar__title{
+.toolbar__title{
     background: url(http://www.showwallpaper.com/wallpaper/0812/024603.jpg);
     font-size: 28px;
     color: rgb(255, 255, 255);
-} */
+}
 
 .tabbar{
     background: url(http://www.showwallpaper.com/wallpaper/0812/024603.jpg);
     color: rgb(255, 255, 255);
 }
-.body {
+body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
