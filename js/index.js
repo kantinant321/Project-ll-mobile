@@ -46,7 +46,7 @@ $(function () {
          
       querySnapshot.forEach((doc) => {
               var num = `${doc.data().No}`
-              var card = ` <img src="${doc.data().URL}" width="70" height="70" id="a1">
+              var card = ` <img src="${doc.data().URL}" width="80" height="70" id="a1">
               `;
               $("#a" + num).append(card);
           });
