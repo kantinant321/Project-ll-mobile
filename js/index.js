@@ -7,14 +7,13 @@ function m() {
         var num = `${doc.data().listN}`
         var card =
           `<div class="card">
-          <img class="card-img-top" src="${doc.data().posterURL}" alt="">
+          <img class="card-img-top" src="${doc.data().URL}" width="375" height="300" alt="">
           <div class="card-doby">
-             <h4 class="card-title">${doc.data().title} - ${doc.data().year}</h4>
-             <p class="card-text">${doc.data().detail}</p>
+             <h4 class="card-title">${doc.data().title}</h4>
              </div>
         </div>
         <center>
-        <div class="bass">Trailer</div>
+        <div class="bass"></div>
                     <iframe src="${doc.data().Trailer}" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>

@@ -12,7 +12,9 @@ function Searchmovie() {
   <div>
       <div class="col">
       <div>
-        <img src="${doc.data().posterURL}" class="card-img">
+      <iframe src="${doc.data().Trailer}" frameborder="0"
+      allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
         <img src="${doc.data().URL}" class="card-img">
         <h5 class="card-title">${doc.data().title}</h5>
       </div>
@@ -42,7 +44,9 @@ function Searchmovie() {
   <div id="s${doc.data().listN}">
       <div class="col">
       <div>
-        <img src="${doc.data().posterURL}" class="card-img">
+      <iframe src="${doc.data().Trailer}" frameborder="0"
+      allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
         <img src="${doc.data().URL}" style="width: 50px; hight:"50px">
         <h5 class="card-title">${doc.data().title}</h5>
       </div>
