@@ -13,7 +13,7 @@ function Searchmovie() {
       <div class="col">
       <div>
         <img src="${doc.data().posterURL}" class="card-img">
-        <img src="${doc.data().url}" class="card-img">
+        <img src="${doc.data().URL}" class="card-img">
         <h5 class="card-title">${doc.data().title}</h5>
       </div>
       </div>
@@ -43,7 +43,7 @@ function Searchmovie() {
       <div class="col">
       <div>
         <img src="${doc.data().posterURL}" class="card-img">
-        <img src="${doc.data().url}" style="width: 50px; hight:"50px">
+        <img src="${doc.data().URL}" style="width: 50px; hight:"50px">
         <h5 class="card-title">${doc.data().title}</h5>
       </div>
       </div>

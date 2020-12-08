@@ -29,11 +29,11 @@ function m() {
 
 $(function () {
   var db = firebase.firestore();
-  db.collection("movie").get().then((querySnapshot) => {
+  db.collection("poster").get().then((querySnapshot) => {
          
       querySnapshot.forEach((doc) => {
-              var num = `${doc.data().listN}`
-              var card = ` <img src="${doc.data().posterURL}" width="375" height="200" id="m1">
+              var num = `${doc.data().No}`
+              var card = ` <img src="${doc.data().URL}" width="375" height="200" id="m1">
               `;
               $("#m" + num).append(card);
           });
@@ -55,17 +55,16 @@ $(function () {
 
 
 var db = firebase.firestore();
-db.collection("movie")
+db.collection("news")
 .get()
 .then((querySnapshot) => {
   querySnapshot.forEach((doc)=>{
-    var c = `${doc.data().listN}`
+    var c = `${doc.data().No}`
       var card =
     `<div class="card">
-      <img class="card-img-top" src="${doc.data().posterURL}" alt="">
+      <img class="card-img-top" src="${doc.data().URL}" alt="">
       <div class="card-doby">
-         <h4 class="card-title">${doc.data().title} - ${doc.data().year}</h4>
-         <p class="card-text">${doc.data().detail}</p>
+         <p class="card-text">${doc.data().news}</p>
          </div>
     </div>`
     $("#list2"+c).append(card);
