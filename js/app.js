@@ -3,12 +3,12 @@ document.addEventListener('init', function(event) {
 
   if (page.id === 'page1') {
 
-    page.querySelector('#a1').onclick = function() {
+    page.querySelector('#m1').onclick = function() {
       m()
       document.querySelector('#myNavigator').pushPage('views/detail.html');
     };
 
-    page.querySelector('#a2').onclick = function() {
+    page.querySelector('#m2').onclick = function() {
       m()
       document.querySelector('#myNavigator').pushPage('views/detail2.html');
     };
