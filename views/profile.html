@@ -1,11 +1,57 @@
 <ons-page id="Profile">
-  <h2>Profile</h2>
-  <div class="rectangle"></div>
-  <div class="circle"></div>
-  <div class=""><span id="username"></span></div>
-  <br><br><br><br><br><br><br><br><br><br><br>
-  <center>
-    <button class="btn btn-primary" onclick="signOut()" id="signOut">SignOut</button>
-  </center>
+
+
+    <div class="profile">
+        <B></B>
+
+
+
+    </div>
+
+
+    <div class="setting">
+        <div class="icon1">
+            <ons-icon icon="md-money" active-icon="md-money" size="30px" style="color: orange">
+            </ons-icon>
+        </div>
+        <div class="media__content">
+            <B>PREMIUM MEMBER</B>
+        </div>
+    </div>
+
+    <div class="setting">
+        <div class="icon1">
+            <ons-icon icon="md-card" active-icon="md-card" size="30px" style="color: green">
+            </ons-icon>
+        </div>
+        <div class="media__content">
+            <B>DONATION</B>
+        </div>
+    </div>
+
+    <div class="setting">
+        <div class="icon1">
+            <ons-icon icon="md-settings" active-icon="md-settings" size="30px" style="color: blue">
+            </ons-icon>
+        </div>
+        <div class="media__content">
+            <B>SETTING</B>
+        </div>
+    </div>
+
+    <div class="setting" +="btn btn-primary" onclick="signOut()" id="signOut">
+        <div class="icon1">
+            <ons-icon icon="md-sign-in
+        " active-icon="md-sign-in
+        " size="30px" style="color: red">
+            </ons-icon>
+        </div>
+
+        <div class="media__content">
+            <B>Sign out</B>
+        </div>
+    </div>
+
+
 
 </ons-page>
