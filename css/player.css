@@ -1,0 +1,27 @@
+.player{
+    background-color: rgb(94, 97, 94);
+    color: seashell;
+    text-align: center;
+}
+.playerp{
+    text-align: left;
+}
+.text{
+    text-align: center;
+    font-size: 50px;
+    background-color: snow;
+}
+.conphoto{
+    background-color: skyblue;
+    text-align: center;
+}
+.photop{
+    width: 150px;
+    text-align: center;
+}
+.hhh{
+    background-color: rgb(134, 139, 137);
+    text-align: left;
+    margin: 20px;
+    border: 4px solid rgb(119, 7, 7);
+}
