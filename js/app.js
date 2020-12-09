@@ -8,10 +8,10 @@ document.addEventListener('init', function(event) {
             document.querySelector('#myNavigator').pushPage('views/detail.html');
         };
 
-        // page.querySelector('#m2').onclick = function() {
-        //     m()
-        //     document.querySelector('#myNavigator').pushPage('views/detail2.html');
-        // };
+        page.querySelector('#list22').onclick = function() {
+
+            document.querySelector('#myNavigator').pushPage('views/detail2.html');
+        };
 
         // page.querySelector('#m3').onclick = function() {
         //     m()
