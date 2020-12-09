@@ -1,25 +1,72 @@
 <ons-page>
-    <ons-page id="Favorite">
-      
-      <div class="toolbar">
-        <div class="toolbar__center">
-          <div class="segment" style="width:200px;margin:7px 50px;">
-            <div class="segment__item">
-              <input type="radio" class="segment__input" name="navi-segment-a" checked="">
-              <div class="segment__button">One</div>
-            </div>
-      
-            <div class="segment__item">
-              <input type="radio" class="segment__input" name="navi-segment-a">
-              <div class="segment__button">Two</div>
-            </div>
-          </div>
+  <ons-page id="Favorite">
+
+    <ons-page>
+
+      <ons-toolbar>
+        <div class="center">
+          <ons-segment id="segment" tabbar-id="tabbar" style="width: 350px">
+            <button>Schedule</button>
+            <button>Team</button>
+
+          </ons-segment>
         </div>
-      </div>
-    
-      <img src="https://firebasestorage.googleapis.com/v0/b/movietest-affbf.appspot.com/o/valorant%2FT1.png?alt=media&token=82e5fb61-615c-4263-9833-aafd9220d53d" width="375" height="375">
-      <div class="T"></div><br><br>
-      <center><h1><b>NO HAVE TOURNAMENT</B></h1></center>
-      </div>
+      </ons-toolbar>
+
+      <ons-tabbar id="tabbar">
+        <ons-tab page="page1.html" active></ons-tab>
+        <ons-tab page="page2.html"></ons-tab>
+
+      </ons-tabbar>
     </ons-page>
-    </ons-page>
+
+    <template id="page1.html">
+      <ons-page>
+        <div class="photo2">
+          <img class="p2" src="/photo/p2.png" alt="">
+          <h1>
+            <center> No have Tounament<center>
+          </h1>
+        </div>
+      </ons-page>
+    </template>
+
+    <template id="page2.html">
+      <ons-page>
+        <div class="container">
+          <ons-row>
+            <ons-col><img class="photo99" src="/photo/p3.jpg" alt=""></ons-col>
+            <ons-col>
+              <h1>MiTH</h1>
+            </ons-col>           
+            <input type="button" onclick="window.location.href='/views/player.html'" value="GO!">
+          </ons-row>
+        </div>
+        <div class="container">
+          <ons-row>
+            <ons-col><img class="photo9" src="/photo/p4.png" alt=""></ons-col>
+            <ons-col>
+              <h1>Evos</h1>
+            </ons-col>
+          </ons-row>
+        </div>
+        <div class="container">
+          <ons-row>
+            <ons-col><img class="photo" src="/photo/p5.jpg" alt=""></ons-col>
+            <ons-col>
+              <h1>Asus</h1>
+            </ons-col>
+          </ons-row>
+        </div>
+      </ons-page>
+    </template>
+    <img
+      src="https://firebasestorage.googleapis.com/v0/b/movietest-affbf.appspot.com/o/valorant%2FT1.png?alt=media&token=82e5fb61-615c-4263-9833-aafd9220d53d"
+      width="375" height="375">
+    <div class="T"></div><br><br>
+    <center>
+      <h1><b>NO HAVE TOURNAMENT</B></h1>
+    </center>
+    </div>
+  </ons-page>
+</ons-page>
