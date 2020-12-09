@@ -156,3 +156,31 @@ body {
     margin-left: 25px;
     margin-top: 1px;
 }
+
+.testttt {
+    background-color: #6633FF;
+}
+
+.photo98 {
+    width: 150px;
+    height: 150px;
+}
+
+.photo99 {
+    width: 150px;
+    height: 150px;
+}
+
+.team {
+    background-color: rgb(8, 8, 8);
+    width: 340px;
+    border: 2px solid rgb(119, 7, 7);
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.ttext {
+    color: white;
+    text-align: center;
+}
