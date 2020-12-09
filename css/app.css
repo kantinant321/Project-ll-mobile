@@ -234,3 +234,22 @@ body {
     margin: 20px;
     border: 4px solid rgb(119, 7, 7);
 }
+
+.textt {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.chat {
+    height: 90px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    background-color: white;
+}
+
+.showchat {
+    margin-top: 12px;
+    margin-left: 15px;
+}

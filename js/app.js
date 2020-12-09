@@ -1,17 +1,17 @@
 document.addEventListener('init', function(event) {
     var page = event.target;
 
-    if (page.id === 'page1') {
+    if (page.id === 'home1') {
 
         page.querySelector('#list21').onclick = function() {
             m()
             document.querySelector('#myNavigator').pushPage('views/detail.html');
         };
 
-        page.querySelector('#list22').onclick = function() {
+        // page.querySelector('#list22').onclick = function() {
 
-            document.querySelector('#myNavigator').pushPage('views/detail2.html');
-        };
+        //     document.querySelector('#myNavigator').pushPage('views/detail2.html');
+        // };
 
         // page.querySelector('#m3').onclick = function() {
         //     m()
@@ -78,7 +78,24 @@ document.addEventListener('init', function(event) {
         //   //document.querySelector('#myNavigator').pushPage('views/detail.html');
         // };
 
-    } else if (page.id === 'page2') {
+    } else if (page.id === 'home2') {
         page.querySelector('ons-toolbar .center').innerHTML = page.data.title;
     }
 });
+
+
+// document.addEventListener('init', function(event) {
+//     var page = event.target;
+
+//     if (page.id === 'page1') {
+//         page.querySelector('#team1').onclick = function() {
+//             document.querySelector('#myNavigator').pushPage('views/player.html', { data: { title: 'Page 2' } });
+//         };
+//     } else if (page.id === 'page2') {
+//         page.querySelector('ons-toolbar .center').innerHTML = page.data.title;
+//     }
+// });
+
+function getdata() {
+    document.querySelector('#myNavigator').pushPage('views/detail2.html');
+}
